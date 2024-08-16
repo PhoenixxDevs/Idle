@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background-image: linear-gradient(to top, #DA691F, #24403E);
+  background: rgb(206, 70, 70);
+  background: linear-gradient(to top,
+      rgba(206, 70, 70, 1) 0%,
+      rgba(219, 91, 171, 1) 37%,
+      rgba(0, 119, 143, 1) 100%
+      );
+  overflow: hidden;
+  /* #1C231F */
+}
+
+canvas {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+}
+
+ul li div {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #24403E8d;
+  border: 2px solid rgba(234, 224, 124, 0.97);
+  color: rgba(234, 224, 124, 0.97);
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  line-height: 2.rem;
+  font-weight: 600;
+}
+ul li div span {
+  display: block;
+  width: 100%;
+  padding:0.5rem 1rem;
+}
+.upgrade-price {
+  background-color: #5f179641;
+}
+
+#points {
+  position: absolute;
+  top:0; left:0;
+  padding: 0.3rem;
+  color: #A7B9CA;
+  font-size: 20px;
+  z-index: 1;
+  transition:cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+#points.active {
+  color: rgba(234, 224, 124, 0.97);
+  padding: 0.6rem;
+}
+
+#shop {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top:0; left:100dvw;
+  width: 0;
+  height: 100vh;
+  background: rgba(0, 119, 143, 0.5);
+  transition:cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+}
+
+#shop.active {
+  left:0;
+  width: 100dvw;
+  overflow-y: scroll;
+}
+
+h2 {
+  width: 100dvw;
+  padding: 1.6rem 1rem;
+  color: rgba(228, 217, 98, 1);
+  background: rgba(0,0,0,0.3);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  animation: pulse 2s ease-in-out infinite;
+  border: 5px solid rgba(234, 224, 124, 0.85);
+  border-radius: 20px;
+}
+
+#shop-toggle {
+  position: fixed;
+  top: 0; right: 0;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  opacity: 0.9;
+  z-index: 50;
+  padding-bottom: 2.235rem;
+  padding-right: 2.39rem;
+  border-radius: 50%;
+  /*border: 1px solid black;*/
+  box-shadow: 
+  0 0 6px white,
+  0 0 6px white,
+  0 0 10px white,
+  0 0 12px black;
+ 
+  overflow: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    color: rgba(228, 217, 98, 0.5);
+  }
+  33% {
+    color: rgba(228, 217, 98, 1)
+  }
+  67% {
+    color: rgba(228, 217, 98, 0.7);
+  }
+  90% {
+    color: rgba(228, 217, 98, 1);
+  }
+  100% {
+    color: rgba(228, 217, 98, 0.5);
+  }
+}

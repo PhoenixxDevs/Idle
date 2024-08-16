@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Rocket</title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <section id="shop" class="shop">
+    <h2 id="shop-title">SHOP</h2>
+  <ul id="shop-list">
+    <li>
+      <div id="value" onclick="upgrade('value')">
+        <span id="value-amount" class="upgrade-count">
+          POINT VALUE: x1
+        </span>
+        <br>
+        <span id="value-price" class="upgrade-price">
+          PRICE: 1
+        </span>
+      </div>
+    </li>
+    <li>
+      <div id="helper" onclick="upgrade('helper')">
+        <span id="helper-amount" class="upgrade-count">
+          HELPER COUNT: x0
+        </span>
+        <br>
+        <span id="helper-price" class="upgrade-price">
+          PRICE: 1
+        </span>
+      </div>
+    </li>
+    <li>
+      <div id="attraction-speed" onclick="upgrade('attractionSpeed')">
+        <span id="attraction-speed-amount" class="upgrade-count">
+          ATTRACTION SPEED: x0
+        </span>
+        <br>
+        <span id="attraction-speed-price" class="upgrade-price">
+          PRICE: 1
+        </span>
+      </div>
+    </li>
+    <li>
+      <div id="attraction-radius" onclick="upgrade('attractionRadius')">
+        <span id="attraction-radius-amount" class="upgrade-count">
+          ATTRACTION RADIUS: x0
+        </span>
+        <br>
+        <span id="attraction-radius-price" class="upgrade-price">
+          PRICE: 1
+        </span>
+      </div>
+    </li>
+  </ul>
+</section>
+<h1 id="points"></h1>
+<canvas id="canvas"></canvas>
+<div id="shop-toggle"onclick="shopToggler()">⬆️</div>
+<script src="assets/js/utils.js"></script>
+<script src="assets/js/color.js"></script>
+<script src="assets/js/particle.js"></script>
+<script src="assets/js/point.js"></script>
+<script src="assets/js/player.js"></script>
+<script src="assets/js/cloud.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
